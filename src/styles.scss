@@ -9,9 +9,22 @@ $cor-secundaria: #6d2bc2;
 $cor-background-1: #312d35;
 $cor-background-2: #242527;
 
-.app-text-principal
+.app-texto-principal
 {
     color: $cor-principal;
+}
+
+.app-background-principal
+{
+    background-color: $cor-principal;
+}
+
+.app-hover-secundario
+{
+    &:hover 
+    {
+        background-color: $cor-secundaria;
+    }
 }
 
 .app-background-secundario
@@ -27,4 +40,18 @@ $cor-background-2: #242527;
 .app-background-escuro-2
 {
     background-color: $cor-background-2;
+}
+
+#portfolio
+{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+section 
+{
+    min-height: 100vh; // vh - view-height
+
+    padding-top: 2rem;
+    padding-bottom: 2rem; // rem = relative to root size, 1rem = 16px
 }

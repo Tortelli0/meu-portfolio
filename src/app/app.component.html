@@ -1,22 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container py-2">
-
-        <a class="navbar-brand fw-semibold" href="#">Eduardo Tortelli</a>
-        
-        <button (click)="colapsarNavBar = !colapsarNavBar" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" [ngClass]="{show : colapsarNavBar}">
-
-            <div class="navbar-nav ms-auto">
-                <a class="nav-link active" aria-current="page" href="#">Início</a>
-            </div>          
-
-        </div>          
-
-    </div>
-</nav>
+<app-navbar></app-navbar>
 
 <section class="app-background-escuro-2 d-flex justify-content-center align-items-center mt-5 mb-3" id="sobre">
     <div class="container">
@@ -32,7 +14,7 @@
             <div class="col-lg-8">
 
                 <h3 class="fs-3">
-                    Meu nome é Eduardo Tortelli, sou um desenvolvedor Full-Stack
+                    Meu nome é <span class="app-texto-principal">Eduardo Tortelli</span>, sou um desenvolvedor Full-Stack
                 </h3>
 
                 <p class="fs-5 mt-3">
@@ -50,10 +32,10 @@
             <div class="col">
 
                 <ul class="list-group">
-                    <li class="list-group-item py-3"><strong>Nome: </strong>Eduardo Tortelli</li>
-                    <li class="list-group-item py-3"><strong>Email: </strong><a href="mailto:euardotortellidudu9@gmail.com">eduardotortellidudu9&#64;gmail.com</a></li>
-                    <li class="list-group-item py-3"><strong>Idade: </strong>19</li>
-                    <li class="list-group-item py-3"><strong>De: </strong>Lages, Santa Catarina</li>
+                    <li class="list-group-item py-3 app-background-principal"><strong>Nome: </strong>Eduardo Tortelli</li>
+                    <li class="list-group-item py-3 app-background-secundario"><strong>Email: </strong><a href="mailto:euardotortellidudu9@gmail.com">eduardotortellidudu9&#64;gmail.com</a></li>
+                    <li class="list-group-item py-3 app-background-principal"><strong>Idade: </strong>19</li>
+                    <li class="list-group-item py-3 app-background-secundario"><strong>De: </strong>Lages, Santa Catarina</li>
                 </ul>
 
                 <div class="d-flex justify-content-center align-items-center gap-3 mt-3">
@@ -66,7 +48,7 @@
                         <i class="bi bi-linkedin fs-1"></i>
                     </a>
 
-                    <a class="btn btn-lg btn-warning rounded-5 px-md-5 fw-semibold" href="https://api.whatsapp.com/send?phone=5549998188861&text&type=phone_number&app_absent=0" target="_blank">
+                    <a class="btn btn-lg app-background-principal app-hover-secundario rounded-5 px-md-5 fw-semibold" href="https://api.whatsapp.com/send?phone=5549998188861&text&type=phone_number&app_absent=0" target="_blank">
                         Contato via WhatsApp
                     </a>
 
@@ -357,7 +339,7 @@
     </div>
 </section>
 
-<section class="app-background-escuro d-flex justify-content-center align-items-center py-5" id="portfolio">
+<section class="app-background-escuro d-flex justify-content-center align-items-center" id="portfolio">
     <div class="container">
       <h2 class="display-5 fw-bold text-center">Portfólio</h2>
   
@@ -378,12 +360,4 @@
     </div>
 </section>
   
-<footer class="app-background-secundario py-3">
-    <div class="container">
-
-        <p class="text-center mb-0">
-            Copyright © 2024 <span class="fw-semibold">Eduardo Tortelli</span>. Todos os direitos reservados.
-        </p>
-
-    </div>
-</footer>
+<app-footer></app-footer>
